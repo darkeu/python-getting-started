@@ -7,8 +7,12 @@ from .models import Greeting
 # Create your views here.
 def index(request):
     # return HttpResponse('Hello from Python!')
-    script1.PublicarTweet("Preferiría no hacerlo3")
-    return render(request, "index.html")
+    try:
+        script1.PublicarTweet("Preferiría no hacerlo3")
+        return render(request, "index.html")
+    except ValueError:
+        print("FALLO")
+    
     
 
 
