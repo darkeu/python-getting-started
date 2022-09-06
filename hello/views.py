@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from hello import script1
 
 from .models import Greeting
 
@@ -13,6 +14,7 @@ def db(request):
 
     greeting = Greeting()
     greeting.save()
+    script1.PublicarTweet("Preferiría no hacerlo")
 
     greetings = Greeting.objects.all()
 

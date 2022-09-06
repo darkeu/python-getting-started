@@ -14,5 +14,3 @@ api = tweepy.API(auth)
 
 def PublicarTweet(message):
     api.update_status(status=message)
-
-PublicarTweet("Preferiría no hacerlo")
