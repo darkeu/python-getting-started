@@ -8,7 +8,7 @@ from .models import Greeting
 def index(request):
     # return HttpResponse('Hello from Python!')
     try:
-        script1.PublicarTweet("Preferiría no hacerlo3")
+        script1.PublicarTweet("Preferiría no hacerlo")
         return render(request, "index.html")
     except ValueError:
         print("FALLO")
